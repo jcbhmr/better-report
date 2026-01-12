@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        "module": "nodenext",
+        "target": "esnext",
+        "lib": ["ESNext"],
+        "customConditions": ["development:@jcbhmr/better-report"],
+        "skipLibCheck": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noPropertyAccessFromIndexSignature": false,
+    }
+}

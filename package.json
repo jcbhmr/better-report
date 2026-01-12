@@ -1,0 +1,18 @@
+{
+    "type": "module",
+    "name": "@jcbhmr/better-report",
+    "version": "1.0.0",
+    "description": "📄 Typed & ergonomic process.report.getReport() wrapper",
+    "types": "./index.d.ts",
+    "exports": "./index.js",
+    "scripts": {
+        "check": "tsc --noEmit",
+        "test": "node --test",
+        "format": "oxfmt"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.6",
+        "oxfmt": "^0.23.0",
+        "typescript": "^5.9.3"
+    }
+}
