@@ -2,17 +2,42 @@
     "type": "module",
     "name": "@jcbhmr/better-report",
     "version": "1.0.0",
+    "license": "MIT",
     "description": "📄 Typed & ergonomic process.report.getReport() wrapper",
-    "types": "./index.d.ts",
-    "exports": "./index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "node": "./dist/index.js"
+    },
+    "files": [
+        "./dist/"
+    ],
     "scripts": {
+        "build": "tsdown",
         "check": "tsc --noEmit",
         "test": "node --test",
-        "format": "oxfmt"
+        "format": "oxfmt",
+        "prepare": "npm run build"
     },
     "devDependencies": {
+        "@arethetypeswrong/core": "^0.18.2",
         "@types/node": "^25.0.6",
         "oxfmt": "^0.23.0",
+        "oxlint": "^1.39.0",
+        "publint": "^0.3.16",
+        "tsdown": "^0.20.0-beta.1",
         "typescript": "^5.9.3"
+    },
+    "engines": {
+        "node": "^25 || ^24 || ^22 || ^20"
+    },
+    "devEngines": {
+        "packageManager": {
+            "name": "npm",
+            "version": "^11"
+        },
+        "runtime": {
+            "name": "node",
+            "version": "^24"
+        }
     }
 }
